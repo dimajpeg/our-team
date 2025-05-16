@@ -46,6 +46,7 @@ body {
     hr {
       width: 450px;
       height: 20px;
+      border: 1px solid var(--gold);
     }
 
     main {
@@ -67,12 +68,6 @@ body {
         }
       }
 
-      hr {
-        border: 1px solid var(--gold);
-        width: 560px;
-        height: 0px;
-        transform: rotate(-90deg);
-      }
 
       .description-block {
         width: 430px;
@@ -89,8 +84,9 @@ body {
 
         hr {
           border: 1px solid var(--gold);
-          width: 100px;
           height: 0px;
+    
+          
         }
 
         h3 {
@@ -107,9 +103,11 @@ body {
           width: 135px;
           height: 30px;
 
+
           svg {
             width: 30px;
             height: 30px;
+            align-items: center;
           }
 
         }
