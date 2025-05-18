@@ -4,6 +4,8 @@
   --third-family: "Open Sans", sans-serif;
   --sub-text: #898f8f;
   --gold: #fc0;
+  --gold: #FFD700;
+
 }
 
 body {
@@ -53,6 +55,15 @@ body {
         width: 450px;
         /* height: 20px; */
         border: 1px solid var(--gold);
+        position: absolute;
+      }
+      svg{
+        width: 20px;
+        height: 20px; 
+        position: relative;
+        left: 45%;
+        background-color: white;
+
       }
     }
 
@@ -69,6 +80,7 @@ body {
         width: 430px;
         height: 430px;
         padding-top: 50px;
+        
 
         img {
           border: 1px solid var(--gold);
@@ -76,16 +88,17 @@ body {
           height: 400px;
         }
 
-        .left {
+        .top-left {
           border: 1px solid var(--gold);
           width: 100px;
           height: 0px;
-          transform: rotate(-90deg);
 
-          
         }
       }
 
+      
+
+      
       .mid {
         height: 560px;
         width: 0px;
