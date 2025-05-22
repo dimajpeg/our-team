@@ -5,6 +5,9 @@
   --sub-text: #898f8f;
   --gold: #fc0;
   --gold: #FFD700;
+  --corner-length: 100px;
+  --corner-thickness: 3px;
+  --corner-offset: 15px;
 
 }
 
@@ -57,9 +60,10 @@ body {
         border: 1px solid var(--gold);
         position: absolute;
       }
-      svg{
+
+      svg {
         width: 20px;
-        height: 20px; 
+        height: 20px;
         position: relative;
         left: 45%;
         background-color: white;
@@ -80,7 +84,8 @@ body {
         width: 430px;
         height: 430px;
         padding-top: 50px;
-        
+        position: relative;
+
 
         img {
           border: 1px solid var(--gold);
@@ -89,16 +94,49 @@ body {
         }
 
         .top-left {
-          border: 1px solid var(--gold);
+          position: absolute;
+          top: 35px;
+          left: -15px;
           width: 100px;
-          height: 0px;
+          height: 100px;
+          border-top: 2px solid var(--gold);
+          border-left: 2px solid var(--gold);
+        }
 
+        .top-right {
+          position: absolute;
+          top: 35px;
+          right: -15px;
+          width: 100px;
+          height: 100px;
+          border-top: 2px solid var(--gold);
+          border-right: 2px solid var(--gold);
+        }
+
+        .bottom-right {
+          position: absolute;
+          bottom: 15px;
+          right: -15px;
+          width: 100px;
+          height: 100px;
+          border-bottom: 2px solid var(--gold);
+          border-right: 2px solid var(--gold);
+        }
+
+        .bottom-left {
+          position: absolute;
+          bottom: 15px;
+          left: -15px;
+          width: 100px;
+          height: 100px;
+          border-bottom: 2px solid var(--gold);
+          border-left: 2px solid var(--gold);
         }
       }
 
-      
 
-      
+
+
       .mid {
         height: 560px;
         width: 0px;
